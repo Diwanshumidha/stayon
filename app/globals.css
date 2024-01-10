@@ -3,25 +3,114 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary: 198 87% 52%;
+  --background: 0 0% 100%;
+  --black: 0 0% 0%;
+  --white: 0 0% 100%;
+
+  --font-thin: 400;
+  --font-normal: 700;
+  --font-bold: 900;
+
+  --black-gradient: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 87%,
+    rgba(0, 0, 0, 0.5532526609276522) 95%,
+    rgba(0, 0, 0, 0.2563338934206495) 100%
+  );
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.dark {
+  /* Dark Mode */
+  --primary: 198 87% 52%;
+  --background: 0 0% 0%;
+  --black: 0 0% 0%;
+  --white: 0 0% 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  font-style: italic;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.navbar--closed,
+.navbar--opened {
+  transition: all 0.5s ease-in-out;
+  will-change: height;
+}
+.navbar {
+  background: rgb(0, 0, 0);
+  background: var(--black-gradient);
+}
+
+.navbar--opened {
+  height: 100svh;
+}
+
+.navbar--closed {
+  height: 0vh;
+  overflow: hidden;
+}
+
+.overlay {
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.29) 100%);
+}
+
+.float {
+  transform: translateY(-6%);
+  animation: floater 1.5s infinite;
+  transition: ease 0.5s;
+}
+
+@keyframes floater {
+  0% {
+    transform: translateY(-6%);
+    transition: ease 0.5s;
+  }
+  50% {
+    transform: translateY(6%);
+    transition: ease 0.5s;
+  }
 }
