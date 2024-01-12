@@ -9,6 +9,8 @@ const HeroSection = () => {
         aria-hidden
       />
       <div className="overlay absolute -z-10  top-0 left-0 w-full h-full"></div>
+      <div className=" absolute bottom-0 h-1/3 white_bottom bg-white w-full"></div>
+
       <div className="pt-[70px] z-20 mx-auto px-8 md:px-12 ">
         <div className="h-[calc(100svh-100px)] flex flex-col lg:max-w-[800px]   w-full text-center justify-center py-6  ">
           <h1 className=" sr-only">Stay On</h1>

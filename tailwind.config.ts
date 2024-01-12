@@ -13,10 +13,13 @@ const config: Config = {
       black: "hsl(var(--black))",
       white: "hsl(var(--white))",
     },
-    fontWeight: {
-      thin: "var(--font-thin)",
-      normal: "var(--font-normal)",
-      bold: "var(--font-bold)",
+    extend: {
+      fontWeight: {
+        thin: "var(--font-thin)",
+        normal: "var(--font-normal)",
+
+        bold: "var(--font-bold)",
+      },
     },
   },
   plugins: [],
