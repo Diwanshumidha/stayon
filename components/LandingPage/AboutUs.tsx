@@ -1,5 +1,6 @@
 import React from "react";
 import Heading from "../Heading";
+import Button from "../Button";
 
 const AboutUs = () => {
   return (
@@ -12,9 +13,9 @@ const AboutUs = () => {
           src="/images/Us.webp"
         ></img>
       </div>
-      <div className=" grid justify-items-end  gap-6 content-center text-right p-24">
+      <div className=" grid md:justify-items-end  gap-6 content-center md:text-right p-10 sm:p-20 md:p-24">
         <Heading>O nás </Heading>
-        <p className=" text-2xl  text-white">
+        <p className=" text-lg md:text-2xl  text-white">
           Jsme inovativní marketingová a digitální agentura, zaměřená na
           poskytování kreativních řešení a strategií, které pomáhají našim
           klientům dosáhnout svých obchodních cílů. <br /> <br /> S vášní a
@@ -23,6 +24,9 @@ const AboutUs = () => {
           Jsme tu pro vás, abychom společně vytvořili příběh, který osloví a
           zanechá trvalý dojem.
         </p>
+        <Button className=" text-xl font-semibold hover:scale-105 transition-all">
+          Více o našem týmu
+        </Button>
       </div>
     </section>
   );

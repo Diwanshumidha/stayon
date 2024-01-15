@@ -3,7 +3,7 @@ import React from "react";
 
 const Importance = () => {
   return (
-    <section className=" grid md:grid-cols-2  px-20 md:px-60 ">
+    <section className=" grid md:grid-cols-2 px-10  sm:px-20   ">
       <div className=" grid place-content-center">
         <h2 className=" text-primary  text-3xl md:text-6xl font-semibold  py-2 border-primary ">
           Proč jsou vaše webové stránky důležité?
@@ -20,7 +20,7 @@ const Importance = () => {
           })}
         </div>
       </div>
-      <div className=" grid place-content-center">
+      <div className=" grid place-content-center wobbling">
         <img
           src="/images/cwok_casual_21 1.webp"
           alt=" Person sitting and thinking"

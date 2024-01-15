@@ -1,0 +1,57 @@
+.footer_wrapper {
+  display: grid;
+  height: 500px;
+  grid-template-rows: min-content auto;
+  grid-template-columns: minmax(170px, auto) minmax(250px, 600px) minmax(
+      1px,
+      150px
+    );
+  grid-template-areas:
+    " heading contact margin-top"
+    " details contact margin-bottom";
+}
+
+@media screen and (max-width: 1024px) {
+  .footer_wrapper {
+    display: grid;
+    height: 500px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "heading" "contact" "details";
+  }
+  .margin-top,
+  .margin-bottom {
+    display: none;
+  }
+}
+
+.heading {
+  grid-area: heading;
+  background: white;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact {
+  width: 100%;
+  grid-area: contact;
+}
+
+.margin-top {
+  background: white;
+  width: 100%;
+  grid-area: margin-top;
+}
+
+.details {
+  background: black;
+  width: 100%;
+  grid-area: details;
+}
+
+.margin-bottom {
+  background: black;
+  width: 100%;
+  grid-area: margin-bottom;
+}

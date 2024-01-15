@@ -1,0 +1,66 @@
+.input_wrapper {
+  --width-of-input: 100%;
+  --border-height: 3px;
+  --border-before-color: rgb(255, 255, 255);
+  --border-after-color: hsl(198, 87%, 32%);
+  --input-hovered-color: #ffffff17;
+
+  position: relative;
+  width: var(--width-of-input);
+}
+
+/* styling of Input */
+
+.input::placeholder {
+  color: white;
+}
+.input {
+  color: #fff;
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+  border-bottom: var(--border-height) solid var(--border-before-color);
+}
+
+/* styling of animated border */
+.input-border {
+  position: absolute;
+  background: var(--border-after-color);
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+/* Hover on Input */
+.input:hover {
+  background: var(--input-hovered-color);
+}
+
+.input:focus {
+  outline: none;
+}
+
+/* here is code of animated border */
+.input:focus ~ .input-border {
+  width: 100%;
+}
+
+.textarea:focus {
+  border-bottom: var(--border-height) solid var(--border-after-color);
+}
+
+.textarea:focus ~ .input-border {
+  width: 0%;
+}
+
+/* === if you want to do animated border on typing === */
+/* remove input:focus code and uncomment below code */
+/* input:valid ~ .input-border{
+     width: 100%;
+   } */

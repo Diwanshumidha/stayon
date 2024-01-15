@@ -1,4 +1,11 @@
-const NavLinks = [];
+export const NavLinks = [
+  { text: "Úvod", path: "/" },
+  { text: "O nás", path: "/o-nas" },
+  { text: "Webové stránky", path: "/webove-stranky" },
+  { text: "Online marketing", path: "/online-marketing" },
+  { text: "Videotvorba", path: "/videotvorba" },
+  { text: "Kontakt", path: "/kontakt" },
+];
 export const ImportancePoints = [
   {
     heading: "Prezentace",
