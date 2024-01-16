@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const ContactForm = () => {
   return (
-    <div className=" px-10 xl:px-20 py-20 gap-3 h-full flex flex-col text-xl">
+    <div className=" px-10 xl:px-20 py-20 gap-3 h-full flex flex-col text-xl min-h-[600px] ">
       <div className=" flex justify-between gap-3">
         <Input placeholder="Jméno" />
         <Input placeholder="Jméno" />

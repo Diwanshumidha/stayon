@@ -20,6 +20,27 @@
   );
 }
 
+@layer {
+  .bg-karta {
+    background: linear-gradient(
+      139deg,
+      #93deff 11.43%,
+      #18adef 44.68%,
+      #004868 88.62%
+    );
+  }
+
+  .bg-gradient-slant {
+    background: linear-gradient(
+      33deg,
+      #09d 9.33%,
+      #5cccfe 47.86%,
+      #5cccfe 50.24%,
+      #e2f6ff 89.85%
+    );
+  }
+}
+
 .dark {
   /* Dark Mode */
   --primary: 198 87% 52%;

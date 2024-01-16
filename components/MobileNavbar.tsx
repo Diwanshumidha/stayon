@@ -28,7 +28,7 @@ const MobileNavbar = () => {
           <Close />
         </button>
         <div className=" container mx-auto grid md:grid-cols-2">
-          <div className="pl-3 space-y-4">
+          <div className="pl-3 space-y-4 max-md:hidden">
             <img
               src="/images/Logo_Light.webp"
               width={392}
@@ -65,13 +65,13 @@ const MobileNavbar = () => {
 
           {/* Links */}
 
-          <div>
-            <ul className=" text-white text-end font-bold text-2xl space-y-8">
+          <div className=" ">
+            <ul className=" text-white text-end   font-bold text-2xl flex flex-col  justify-between ">
               {NavLinks.map((item) => (
                 <li key={item.text}>
                   <Link
                     onClick={() => setIsOpen(false)}
-                    className=" hover:text-primary"
+                    className=" hover:text-primary scroll-smooth"
                     href={item.path}
                   >
                     {item.text}

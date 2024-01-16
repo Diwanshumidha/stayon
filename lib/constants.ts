@@ -1,10 +1,10 @@
 export const NavLinks = [
   { text: "Úvod", path: "/" },
-  { text: "O nás", path: "/o-nas" },
-  { text: "Webové stránky", path: "/webove-stranky" },
-  { text: "Online marketing", path: "/online-marketing" },
+  { text: "O nás", path: "/about-us" },
+  { text: "Webové stránky", path: "/web" },
+  { text: "Online marketing", path: "/marketing" },
   { text: "Videotvorba", path: "/videotvorba" },
-  { text: "Kontakt", path: "/kontakt" },
+  { text: "Kontakt", path: "#contact-form" },
 ];
 export const ImportancePoints = [
   {
@@ -24,84 +24,84 @@ export const ImportancePoints = [
 
 export const WhatcanWeDoPoints = [
   {
-    icon:"/svg/icons/seo.svg",
+    icon: "/svg/icons/seo.svg",
     heading: "SEO",
-    para: `Zajišťujeme větší viditelnost a úspěšnost ve vyhledávačích`
+    para: `Zajišťujeme větší viditelnost a úspěšnost ve vyhledávačích`,
   },
   {
-    icon:"/svg/icons/sprava.svg",
+    icon: "/svg/icons/sprava.svg",
     heading: `Správa sociálních sítí`,
-    para: `Pravidelné tvoření a přidávání příspěvků na vaše sociální sítě.`
+    para: `Pravidelné tvoření a přidávání příspěvků na vaše sociální sítě.`,
   },
   {
-    icon:"/svg/icons/ppc.svg",
+    icon: "/svg/icons/ppc.svg",
     heading: `PPC Kampaně`,
-    para: `Sestavení, výroba, správa a optimalizace reklamních kampaní.`
+    para: `Sestavení, výroba, správa a optimalizace reklamních kampaní.`,
   },
   {
-    icon:"/svg/icons/copywrite.svg",
+    icon: "/svg/icons/copywrite.svg",
     heading: `Copywriting`,
-    para: `Tvoříme texty, které dávají smysl.`
+    para: `Tvoříme texty, které dávají smysl.`,
   },
   {
-    icon:"/svg/icons/google_ads.svg",
+    icon: "/svg/icons/google_ads.svg",
     heading: `Google Ads`,
-    para: `Vytváříme a realizujeme reklamy s Google Ads.`
+    para: `Vytváříme a realizujeme reklamy s Google Ads.`,
   },
   {
-    icon:"/svg/icons/meta_ads.svg",
+    icon: "/svg/icons/meta_ads.svg",
     heading: `Meta Ads`,
-    para: `Vytváříme a realizujeme reklamy na Facebooku a Instagramu.`
+    para: `Vytváříme a realizujeme reklamy na Facebooku a Instagramu.`,
   },
   {
-    icon:"/svg/icons/tiktok_ads.svg",
+    icon: "/svg/icons/tiktok_ads.svg",
     heading: `TikTok Ads`,
-    para: `Vytváříme kampaně a kreativní reaklamy na platformu TikTok.`
+    para: `Vytváříme kampaně a kreativní reaklamy na platformu TikTok.`,
   },
   {
-    icon:"/svg/icons/vyroba.svg",
+    icon: "/svg/icons/vyroba.svg",
     heading: `Výroba conentu`,
-    para: `Konverzní videa a grafika do reklam.`
+    para: `Konverzní videa a grafika do reklam.`,
   },
   {
-    icon:"/svg/icons/influencer.svg",
+    icon: "/svg/icons/influencer.svg",
     heading: `Influencer management`,
-    para: `Managujeme spolupráce infulencerům, staráme se o jejich dosahy.`
+    para: `Managujeme spolupráce infulencerům, staráme se o jejich dosahy.`,
   },
   {
-    icon:"/svg/icons/strategie.svg",
+    icon: "/svg/icons/strategie.svg",
     heading: `Strategie cílení`,
-    para: `Analýza klíčových slov, nastavení cílových skupin a rozpočů.`
+    para: `Analýza klíčových slov, nastavení cílových skupin a rozpočů.`,
   },
   {
-    icon:"/svg/icons/newsletter_threads.svg",
+    icon: "/svg/icons/newsletter_threads.svg",
     heading: `Newsletter`,
-    para: `Tvorba a rozesílání emailových kampaní.`
+    para: `Tvorba a rozesílání emailových kampaní.`,
   },
   {
-    icon:"/svg/icons/formularu.svg",
+    icon: "/svg/icons/formularu.svg",
     heading: `Sběr leadů a formulářů`,
-    para: `Návrh a tvorba leadových formulářů a jejich napojení na systémy.`
+    para: `Návrh a tvorba leadových formulářů a jejich napojení na systémy.`,
   },
-]
+];
 
-export const aboutUsDetails=[
+export const aboutUsDetails = [
   {
-    icon:"/images/Member_1.webp",
+    icon: "/images/Member_1.webp",
     heading: "Honza",
-    para: `Zakladatel, manager web developmentu a marketingu`
+    para: `Zakladatel, manager web developmentu a marketingu`,
   },
   {
-    icon:"/images/Member_2.webp",
+    icon: "/images/Member_2.webp",
     heading: "Ondřej",
-    para: `Zakladatel, Key account manager`
+    para: `Zakladatel, Key account manager`,
   },
   {
-    icon:"/images/Member_3.webp",
+    icon: "/images/Member_3.webp",
     heading: "Honza",
-    para: `Manager contentu`
+    para: `Manager contentu`,
   },
-]
+];
 
 export const WhyWOrkWithUsPoints = [
   {

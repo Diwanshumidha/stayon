@@ -13,8 +13,10 @@ const AboutUs = () => {
           src="/images/Us.webp"
         ></img>
       </div>
-      <div className=" grid md:justify-items-end  gap-6 content-center md:text-right p-10 sm:p-20 md:p-24">
-        <Heading>O nás </Heading>
+      <div className=" grid md:justify-items-end  gap-6 content-center md:text-right p-10 sm:p-20 md:p-20">
+        <div className=" w-max">
+          <Heading>O nás </Heading>
+        </div>
         <p className=" text-lg md:text-2xl  text-white">
           Jsme inovativní marketingová a digitální agentura, zaměřená na
           poskytování kreativních řešení a strategií, které pomáhají našim

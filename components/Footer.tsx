@@ -3,9 +3,9 @@ import "./Footer.css";
 import ContactForm from "./ContactForm";
 const Footer = () => {
   return (
-    <section className=" mt-10 ">
+    <section className=" mt-10 " id="contact-form">
       <div className="footer_wrapper">
-        <div className="heading text-primary lg:py-4 max-lg:text-center text-end flex gap-4">
+        <div className="heading text-primary lg:py-4 max-lg:text-center text-end flex gap-4 max-sm:py-6">
           <h2 className="text-5xl  flex-1 xl:text-7xl  font-semibold">
             Kontaktní <br /> formulář
           </h2>
@@ -16,10 +16,10 @@ const Footer = () => {
             />
           </div>
         </div>
-        <div className="contact bg-primary">
+        <div className="contact bg-primary max-w-[600px] mx-auto">
           <ContactForm />
         </div>
-        <div className="details border-t-8 border-primary">
+        <div className="details border-t-8 border-primary py-5">
           <Details />
         </div>
 

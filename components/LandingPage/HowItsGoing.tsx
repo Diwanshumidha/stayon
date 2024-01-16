@@ -3,11 +3,12 @@ import Heading from "../Heading";
 
 const HowItsGoing = () => {
   return (
-    <section className=" grid lg:grid-cols-2 mt-24 px-10 sm:px-20 xl:px-60 ">
+    <section className=" grid lg:grid-cols-2 py-20 mt-24 px-10 sm:px-20  ">
       <div className=" space-y-6 ">
         <Heading>
           Jak probíhá <br /> <span className=" font-bold">spolupráce?</span>
         </Heading>
+
         <p className=" text-black md:text-xl">
           Náš systém spolupráce si zakládá na zjištění cílů našich klientů tak,
           abychom vždy byli schopni co nejvíce vyhovět jeho potřebám a přiblížit
@@ -17,7 +18,7 @@ const HowItsGoing = () => {
           zákazníkem komunikujeme, a vysvětlíme krok po kroku.
         </p>
       </div>
-      <div className=" grid justify-center">
+      <div className=" flex justify-end">
         <img
           loading="lazy"
           alt="How Its Going"

@@ -1,6 +1,6 @@
 .footer_wrapper {
   display: grid;
-  height: 500px;
+  /* height: 600px; */
   grid-template-rows: min-content auto;
   grid-template-columns: minmax(170px, auto) minmax(250px, 600px) minmax(
       1px,
@@ -14,7 +14,7 @@
 @media screen and (max-width: 1024px) {
   .footer_wrapper {
     display: grid;
-    height: 500px;
+    /* height: 500px; */
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     grid-template-areas: "heading" "contact" "details";

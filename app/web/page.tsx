@@ -1,3 +1,4 @@
+import AboutUs from "@/components/OurJobPage/Aboutus";
 import HeroSection2 from "@/components/OurJobPage/HeroSection";
 import Importance from "@/components/OurJobPage/Importance";
 import OurJob from "@/components/OurJobPage/OurJob";
@@ -9,6 +10,7 @@ const page = () => {
       {" "}
       <HeroSection2 />
       <Importance />
+      <AboutUs />
       <OurJob />
     </main>
   );

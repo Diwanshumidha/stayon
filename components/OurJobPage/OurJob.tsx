@@ -2,7 +2,7 @@ import React from "react";
 
 const OurJob = () => {
   return (
-    <section className=" px-6 py-11 container mx-auto space-y-4">
+    <section className=" px-6 py-20 container mx-auto space-y-4">
       <h2 className=" text-4xl lg:text-7xl mb-5 font-semibold text-center">
         Naše práce
       </h2>

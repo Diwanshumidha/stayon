@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="relative grid min-h-[1438px]">
+    <div className="relative grid min-h-[1438px] ">
       <img
         src="/images/Hero_Section.webp"
         className=" absolute top-0 object-cover h-[1438px] -z-20 left-0 w-full"

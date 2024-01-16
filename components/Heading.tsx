@@ -9,7 +9,7 @@ const Heading = ({
 }) => {
   return (
     <h2
-      className={` text-primary text-3xl md:text-6xl font-semibold border-solid border-t-[15px] py-2 border-primary w-max ${className}`}
+      className={` text-primary text-3xl md:text-6xl font-semibold relative before:content-[''] before:absolute before:top-0  before:w-[100px] before:h-[10px] before:bg-primary before:left-0 py-5  ${className}`}
     >
       {children}
     </h2>

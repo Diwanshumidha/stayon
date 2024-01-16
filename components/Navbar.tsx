@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import MobileNavbar from "./MobileNavbar";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,14 +20,16 @@ const Navbar = () => {
         !!isScrolled && "bg-black/60 backdrop-blur-2xl "
       }`}
     >
-      <img
-        src="/images/Logo_Light.webp"
-        alt="Stay On"
-        fetchPriority="high"
-        className=" w-[158px] h-[43px]"
-        width={158}
-        height={43}
-      />
+      <Link href={"/"}>
+        <img
+          src="/images/Logo_Light.webp"
+          alt="Stay On"
+          fetchPriority="high"
+          className=" w-[158px] h-[43px]"
+          width={158}
+          height={43}
+        />
+      </Link>
       <MobileNavbar />
     </header>
   );
