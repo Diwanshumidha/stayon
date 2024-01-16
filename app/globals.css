@@ -157,3 +157,17 @@ p {
     transform: translateY(-2%) scale(1.02);
   }
 }
+
+.marketing-icons-grid-container--gradient {
+  background: linear-gradient(180deg, #000000 0%, #18adef 100%);
+}
+.icon-backgroung--gradient {
+  background: linear-gradient(
+    315deg,
+    #003349 8.46%,
+    #005980 22.8%,
+    #006d9d 54.53%,
+    #4ac8ff 87.13%,
+    #8fddff 95.38%
+  );
+}
